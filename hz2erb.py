@@ -16,7 +16,8 @@ def hz2erbSlaney(hz):
 def hz2erbGlasberg(hz):
     return 24.7 * (4.37 * hz / 1000 + 1)
 
-# Slaney's function and Glasberg's function return nearly identical values. Slaney's function's decimal place accuracy is more than Glasberg's function
+# Slaney's function and Glasberg's function return nearly identical values
+# Slaney's function's decimal place accuracy is more than Glasberg's function.
 print ("MATLAB: ", hz2erbMATLAB(440))
 print ("Slaney: ", hz2erbSlaney(440))
 print ("Glasberg and Moore: ", hz2erbGlasberg(440))
