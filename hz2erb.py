@@ -11,7 +11,7 @@ def hz2erbSlaney(hz):
     order = 1
     return ((hz / EarQ) ** order + minBW ** order) ** (1 / order)
     
-# Glasberg and Moore's function is used my MATLAB in their gammatone filterbank to convert from frequency in Hz to bandwith in ERB.
+# Glasberg and Moore's function is used by MATLAB in their gammatone filterbank to convert from frequency in Hz to bandwith in ERB.
 # https://www.mathworks.com/help/audio/ref/gammatonefilterbank-system-object.html
 def hz2erbGlasberg(hz):
     return 24.7 * (4.37 * hz / 1000 + 1)
